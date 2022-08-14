@@ -1,34 +1,21 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\csgray\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+Step 1: touch .gitignore
 
-\f0\fs30 \cf0 touch .gitignore\
-\
-git config - - global user.name Jaykumar\
-\
-git config - - global user.email \'93jaykumardave.06@gmail.com\'94 \
-\
-git init\
-\
-git add .\
-\
-git commit -m \'93initial commit\'94\
-\
-git status      // just to check or see\
-\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\cf2 \CocoaLigature0 ssh-keygen -t ed25519 -C "jaykumardave.06@gmail.com"\
-\
-tail < path to id_rsa.pub>  // add this key to your GitHub account\
-\
-git remote add origin <ssh url.git>\
-\
-git push origin master  \
-\
-\cf0 \CocoaLigature1 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 \
-}
+Step 2: git config - - global user.name Jaykumar
+
+Step 3: git config - - global user.email "jaykumardave.06@gmail.com"
+
+Step 4: git init
+
+Step 5: git add .
+
+Step 6: git commit -m "initial commit"
+
+Step 7: git status      // just to check or see
+
+Step 8: ssh-keygen -t ed25519 -C "jaykumardave.06@gmail.com"
+
+Step 9: tail < path to id_rsa.pub>   // add this key to your GitHub account
+
+Step 10: git remote add origin <ssh url.git>
+
+Step 11: git push origin master  
