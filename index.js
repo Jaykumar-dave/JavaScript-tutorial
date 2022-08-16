@@ -232,8 +232,22 @@ d = d.replace("boy", "girl");
 
 // 9. Dates in JavaScript
 
-let myDate = new Date();
-console.log(myDate);
-console.log(myDate.getDay());
-console.log(myDate.getFullYear());
-console.log(myDate.getMonth());
+// let myDate = new Date();
+// console.log(myDate);
+// console.log(myDate.getDay());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getMonth());
+
+//-------------------------------------------------------------------------------------------------------------------
+
+// 10. DOM Manipulation 
+
+let elem = document.getElementById('click');
+console.log(elem);
+let elemClass = document.getElementsByClassName('container');
+console.log(elemClass);
+elemClass[0].style.background = 'Yellow';
+
+
+
+
