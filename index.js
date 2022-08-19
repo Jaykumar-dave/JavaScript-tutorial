@@ -243,11 +243,23 @@ d = d.replace("boy", "girl");
 // 10. DOM Manipulation 
 
 let elem = document.getElementById('click');
-console.log(elem);
+// console.log(elem);
 let elemClass = document.getElementsByClassName('container');
-console.log(elemClass);
-elemClass[0].style.background = 'Yellow';
+// console.log(elemClass);
+// elemClass[0].style.background = 'Yellow';
+
+elemClass[0].classList.add("bg-primary");
+elemClass[0].classList.add("text-success");
+
+// console.log(elem.innerHTML);
+// console.log(elem.innerText);
+
+// console.log(elemClass[0].innerText);
+// console.log(elemClass[0].innerHTML);
 
 
+tn = document.getElementsByTagName('Div');
+
+console.log(tn);
 
 
