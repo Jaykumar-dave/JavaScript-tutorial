@@ -240,11 +240,11 @@ d = d.replace("boy", "girl");
 
 //-------------------------------------------------------------------------------------------------------------------
 
-// 10. DOM Manipulation 
+// 10. DOM Manipulation
 
-let elem = document.getElementById('click');
+let elem = document.getElementById("click");
 // console.log(elem);
-let elemClass = document.getElementsByClassName('container');
+let elemClass = document.getElementsByClassName("container");
 // console.log(elemClass);
 // elemClass[0].style.background = 'Yellow';
 
@@ -257,9 +257,42 @@ elemClass[0].classList.add("text-success");
 // console.log(elemClass[0].innerText);
 // console.log(elemClass[0].innerHTML);
 
+tn = document.getElementsByTagName("Div");
+// console.log(tn);
 
-tn = document.getElementsByTagName('Div');
+createdElement = document.createElement("p");
+createdElement.innerText = "This is a created paragraph.";
+tn[0].appendChild(createdElement);
 
-console.log(tn);
+createdElement2 = document.createElement("b");
+createdElement2.innerText = "This is a bold text.";
+tn[0].replaceChild(createdElement2, createdElement);
 
+// Selecting using Query
+
+sel = document.querySelector(".container");
+// console.log(sel);
+
+sel = document.querySelectorAll(".container");
+// console.log(sel);
+
+// 11. Events in JavaScript
+
+// function clicked(){
+//     alert('Button was clicked.');
+//     console.log('Button clicked.');
+// }
+window.onload = function () {
+  console.log("Document was loaded.");
+};
+
+Firstcontainer.addEventListener("click", function () {
+  document.querySelectorAll(".container")[1].innerHTML =
+    "<b>We have performed click action.</b>";
+  console.log("Clicked on container !");
+});
+
+// Firstcontainer.addEventListener('mouseover', function(){
+//     // console.log('Mouse on container !');
+// })
 
