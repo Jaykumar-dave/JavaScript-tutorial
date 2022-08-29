@@ -276,6 +276,9 @@ sel = document.querySelector(".container");
 sel = document.querySelectorAll(".container");
 // console.log(sel);
 
+//-------------------------------------------------------------------------------------------------------------------
+
+
 // 11. Events in JavaScript
 
 // function clicked(){
@@ -283,16 +286,80 @@ sel = document.querySelectorAll(".container");
 //     console.log('Button clicked.');
 // }
 window.onload = function () {
-  console.log("Document was loaded.");
+  // console.log("Document was loaded.");
 };
+
 
 Firstcontainer.addEventListener("click", function () {
   document.querySelectorAll(".container")[1].innerHTML =
     "<b>We have performed click action.</b>";
-  console.log("Clicked on container !");
+  // console.log("Clicked on container !");
 });
 
-// Firstcontainer.addEventListener('mouseover', function(){
-//     // console.log('Mouse on container !');
-// })
+
+
+Firstcontainer.addEventListener('mouseover', function(){
+    // console.log('Mouse on container !');
+})
+//-------------------------------------------------------------------------------------------------------------------
+
+// 12. Arrow function
+
+// function summ(a,b){
+//   return a+b;
+// }
+
+// summ = (a,b) => {
+//   return a+b;
+// }
+
+//-------------------------------------------------------------------------------------------------------------------
+
+
+// 13. SetTimeout and Setinterval
+
+logKaro = ()=>{
+  // document.querySelectorAll(".container")[1].innerHTML =
+  //   "<b>We have performed setTimeout.</b>";
+  // console.log("I am performing setTimeout");
+}
+
+// setTimeout(logKaro, 3000);
+// clr = setInterval(logKaro,5000);
+// use clearInterval(clr)/clearTimeout(clr) to clear/cancel setInterval/setTimeout
+
+//-------------------------------------------------------------------------------------------------------------------
+
+// 14. Javascript LocalStorage
+/*
+localStorage.setItem('name', 'Jaykumar');
+
+localStorage
+
+localStorage.getItem('name');
+localStorage.removeItem('name);
+localStorage.clear();
+*/
+
+//-------------------------------------------------------------------------------------------------------------------
+
+// 15. JSON in JavaScript
+/*
+
+obj = {name: "Jay", length: 1, a: {'this': 'tha"t'} }
+jso = JSON.stringify(obj);
+console.log(typeof jso);
+console.log(jso);
+parsed = JSON.parse(`{"name": "Jay", "length": 1, "a": {"this": "that"} }`)
+console.log(parsed);
+
+*/
+
+//-------------------------------------------------------------------------------------------------------------------
+
+// 16. Template Literals - Backticks
+
+a = 34;
+
+// console.log(`This is my ${a}`); 
 
